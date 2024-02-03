@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background-color: #389162;
+  }
+  .Todo-app {
+    width: 100%;
+    padding: 0px 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Todo-container {
+    text-align: center;
+    max-width: 30%;
+    background-color: #feffde;
+    border-radius: 2px;
+    border: 1px solid #000;
+    padding: 0px 25px;
+    margin: 0 auto;
+    box-shadow: 12px 11px 20px 0px #347144;
+    min-width: 40%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  .Todo-tittle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 25px auto;
+    color: #652d88;
+  }
+  .TodoList{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  .todos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+li.Todo {
+    font-size: 13px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    border: 1px solid #389162;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 3px;
+    color: #652d88;
+    text-align: justify;
+    width: 100%;
+  }
+  .Todo-icons {
+    height: 100%;
+    margin: 0px 0 0;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 8px;
+  }
+  .Todo-update{
+    margin: 0px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .Todo-delete{
+    font-size: 13px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #652d88;
+    margin: 0 0px 0 0px;
+  }
+  .Todo-update{
+    font-size: 13px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #652d88;
+    margin: 0 5px 0 5px;
+  }
+  .Todo-form {
+    width: 100%;
+  }
+  .edit-Todo-form {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .Todo-add{
+    margin: 0px 10px 25px 10px;
+  }
+  .Todo-textbox{
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 3px;
+    margin: 10px auto;
+    font-size: 13px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    background: transparent;
+    border-color: #389162;
+    box-sizing: border-box;
+    border: 2px solid #389162;
+}
+.edit-Todo-textbox{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 0px auto 5x;
+    font-size: 13px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    background: transparent;
+    border-color: #389162;
+    box-sizing: border-box;
+    border: 2px solid #389162;
+}
+.newTodo-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+}
+.newTodo-Add:hover {
+    background-color: #389162;
+    color: #feffde;
+    border: 1px solid #389162;
+}
+.newTodo-Add{
+    width: 100%;
+    margin: 0px 5px 0px 0px;
+    font-size: 12px;
+    padding: 7px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #652d88;
+    box-shadow: 1px 1px 4px;
+}
+.allTodo-delete:hover {
+    background-color: #389162;
+    color: #feffde;
+    border: 1px solid #389162;
+}
+.allTodo-delete {
+    width: 100%;
+    margin: 0px 0px 0px 5px;
+    font-size: 12px;
+    padding: 7px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #652d88;
+    box-shadow: 1px 1px 4px;
+}
+.addSpan{
+    margin: 0px 3px;
+    font-size: 11px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    /* display: flex; */
+}
+input,
+input::placeholder {
+    font-size: 11px;
+    color:#652d88;
+}
+.Todo-textbox:focus {
+    border: 2px solid #652d88 !important;
+    outline: none;
+}
+.SingleTodo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+}
